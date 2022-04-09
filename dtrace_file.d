@@ -56,7 +56,7 @@ syscall::close:return
 
 proc:::exec
 {
-	printf("\nNew process is called by user &d\n",uid);
+	printf("\nNew process is called by user %d\n",uid);
 }
 
 proc:::exit
@@ -65,12 +65,12 @@ proc:::exit
 
 proc:::exec-success
 {
-	printf("%s process is successfully started\n",execname);
+	printf("\n%s process is successfully started\n",execname);
 }
 
 proc:::exec-failure
 {
-	printf("\n%s process is failed to start\n");
+	printf("\nThe process is failed to start\n");
 }
 
 
